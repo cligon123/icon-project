@@ -26,30 +26,63 @@ html, body {
     font-family: 'Libre Baskerville', serif;
 }
 
-.flexbox-container {
-    display: flex;
-    max-width: 1400px;
-    background-color: #fbc4ab;
+p {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.icon {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.container {
+    width: 100%;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    max-width: 100%;
     padding: 10px;
 }
 
+.flexbox-container {
+    background-color: #fbc4ab;
+}
+
 .flexbox {
-    width: 250px;
-    margin: 12px;
-    font-size: 14px;
-    text-align: justify;
+    font-size: 1.4em;
+    padding: 10px;
 }
 
 img {
-    width: 175px;
+    width: 100%;
+}
+
+figure {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
 }
 
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
 @media(min-width: 681px) {
+
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    .flexbox-container {
+        display: flex;
+    }
+
+    .flexbox {
+        flex-basis: 25%;
+        font-size: 1em;
+    }
 }
 
 /*********************************************************************
